@@ -1,5 +1,5 @@
 /* tslint:disable:no-console */
-import React, { Component } from 'react';
+import * as React from 'react';
 import {
   calcRotation,
   getEventName, now,
@@ -124,7 +124,7 @@ const directionMap = {
   horizontal: DIRECTION_HORIZONTAL,
 };
 
-export default class Gesture extends Component<IGesture, any> {
+export default class Gesture extends React.Component<IGesture, any> {
   static defaultProps = {
     enableRotate: false,
     enablePinch: false,
